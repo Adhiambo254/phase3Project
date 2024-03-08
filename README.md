@@ -1,5 +1,6 @@
-![](image1.PNG)
-# Customer Churn Prediction Project
+
+# Customer Churn Prediction 
+![image](https://github.com/Adhiambo254/phase3Project/assets/125627822/99b4f7c2-40df-4e44-9111-7257c517e4aa)
 
 ## Overview
 
