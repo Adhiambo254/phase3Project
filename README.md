@@ -39,17 +39,33 @@ The primary stakeholders are SyriaTel's decision-makers, aiming to reduce custom
 ## Data Understanding
 
 ### Dataset
-The dataset comprises customer-related features such as account length, international plan, voice mail plan, and usage patterns. The target variable, "churn," indicates whether a customer has terminated services.
+The dataset was obtained from [KAGGLE](https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset/data) and it comprises of the following columns:
+
+1. **State:** State in which the customer resides.
+2. **Account Length:** Duration of the customer's account.
+3. **Area Code:** Area code of the customer's phone number.
+4. **Phone Number:** Unique identifier for each customer's phone number.
+5. **International Plan:** Whether the customer has an international plan.
+6. **Voice Mail Plan:** Whether the customer has a voice mail plan.
+7. **Number of Voicemail Messages:** Count of voicemail messages.
+8. **Total Day Minutes:** Total minutes of usage during the day.
+9. **Total Day Calls:** Total number of calls made during the day.
+10. **Total Day Charge:** Total charge for day usage.
+11. **Total Evening Minutes:** Total minutes of usage during the evening.
+12. **Total Evening Calls:** Total number of calls made during the evening.
+13. **Total Evening Charge:** Total charge for evening usage.
+14. **Total Night Minutes:** Total minutes of usage during the night.
+15. **Total Night Calls:** Total number of calls made during the night.
+16. **Total Night Charge:** Total charge for night usage.
+17. **Total International Minutes:** Total minutes of international usage.
+18. **Total International Calls:** Total number of international calls made.
+19. **Total International Charge:** Total charge for international usage.
+20. **Customer Service Calls:** Number of calls made to customer service.
+21. **Churn:** Binary variable indicating whether a customer has terminated services (1 for churn, 0 for no churn).
 
 ### Features
-1. **Account Length:** Duration of the customer's account.
-2. **International Plan:** Whether the customer has an international plan.
-3. **Voice Mail Plan:** Whether the customer has a voice mail plan.
-4. **Usage Patterns:** Total day, evening, night, and international usage minutes.
-5. **Customer Service Calls:** Number of calls made to customer service.
-
-### Target Variable
-- **Churn:** Binary variable indicating whether a customer has terminated services (1 for churn, 0 for no churn).
+1. Categorical features: State, Area Code, International Plan, Voice Mail Plan.
+2. Numeric features: Account Length, Number of Voicemail Messages, Total Day Minutes, Total Day Calls, Total Day Charge, Total Evening Minutes, Total Evening Calls, Total Evening Charge, Total Night Minutes, Total Night Calls, Total Night Charge, Total International Minutes, Total International Calls, Total International Charge, Customer Service Calls.
 
 ## Feature Engineering
 
@@ -57,6 +73,7 @@ The dataset comprises customer-related features such as account length, internat
 New features were created to enhance predictive power:
 1. **Total Charges per Day:** Sum of day, evening, night, and international charges.
 2. **Ratio of Total Day Minutes to Total Night Minutes:** A derived ratio capturing usage patterns.
+
 
 ## Modeling
 
